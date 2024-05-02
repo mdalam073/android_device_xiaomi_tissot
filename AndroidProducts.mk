@@ -11,3 +11,4 @@ COMMON_LUNCH_CHOICES := \
     voltage_tissot-ap1a-userdebug \
     voltage_tissot-ap1a-user \
     voltage_tissot-ap1a-eng
+    brunch tissot
