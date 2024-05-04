@@ -8,6 +8,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/voltage_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
+    lunch voltage_tissot-ap1a-<flavor> 
+    mka bacon
     voltage_tissot-ap1a-userdebug \
     voltage_tissot-ap1a-user \
     voltage_tissot-ap1a-eng
