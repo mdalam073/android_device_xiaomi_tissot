@@ -11,5 +11,4 @@ COMMON_LUNCH_CHOICES := \
     voltage_tissot-ap1a-userdebug \
     voltage_tissot-user \
     voltage_tissot-ap1a-eng \
-    lunch voltage_tissot-ap1a-<flavor> \
-    mka bacon
+  
