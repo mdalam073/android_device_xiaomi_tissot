@@ -8,7 +8,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/derp_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_tissot-userdebug \
-    derp_tissot-user \
-    derp_tissot-eng
+    derp_tissot-ap1a-userdebug \
+    derp_tissot-ap1a-user \
+    derp_tissot-ap1a-eng
 
