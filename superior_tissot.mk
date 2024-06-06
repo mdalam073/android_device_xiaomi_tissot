@@ -25,6 +25,12 @@ PRODUCT_MODEL := Mi A1
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
+# Inherit from the common Xiaomi msm8953 configuration
+$(call inherit-product, device/xiaomi/msm8953-common/msm8953.mk)
+
+# Additional product properties
+PRODUCT_RELEASE := ap1a
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
