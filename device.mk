@@ -53,8 +53,11 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_msm8953
+    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_msm8953 \
+    com.fingerprints.extension@1.0.vendor
 
+PRODUCT_PACKAGES += \
+    liblzma.vendor
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
@@ -74,7 +77,8 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+        $(LOCAL_PATH) \
+    hardware/xiaomi
 
 # Touch HAL
 PRODUCT_PACKAGES += \
