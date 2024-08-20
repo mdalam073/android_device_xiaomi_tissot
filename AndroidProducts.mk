@@ -10,5 +10,5 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
     voltage_tissot-userdebug \
     voltage_tissot-user \
-    voltage_tissot-ap1a-eng \
+    voltage_tissot-eng 
   
