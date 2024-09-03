@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Pixel stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Bootanimation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # PixelOS Specific Flags
 INFINITY_BUILD_TYPE := UnOFFICIAL
 INFINITY_MAINTAINER := Alam
