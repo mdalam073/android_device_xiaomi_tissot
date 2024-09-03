@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_tissot.mk
+    $(LOCAL_DIR)/aosp_tissot.mk
