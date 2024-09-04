@@ -15,8 +15,8 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # PixelOS Specific Flags
-INFINITY_BUILD_TYPE := UnOFFICIAL
-INFINITY_MAINTAINER := Alam
+AOSP_BUILD_TYPE := UnOFFICIAL
+AOSP_MAINTAINER := Alam
 WITH_GAPPS := false
 TARGET_BUILD_GOOGLE_TELEPHONY := false
 USE_MOTO_CALCULATOR := true
