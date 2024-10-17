@@ -24,9 +24,17 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 TARGET_KERNEL_CONFIG := tissot_defconfig
 
 # A/B
+ifeq ($(TARGET_IS_AB),true)
+AB_OTA_UPDATER := true
+BOARD_USES_RECOVERY_AS_BOOT := true
+TARGET_NO_RECOVERY := true
+
+# A/B
 AB_OTA_PARTITIONS += \
     boot \
-    system
+    system \
+    vendor
+endif
 
 # Partitions
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 55087422464 # 25765059584 - 16384
