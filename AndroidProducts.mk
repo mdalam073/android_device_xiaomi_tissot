@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tissot.mk
+    $(LOCAL_DIR)/sigma_tissot.mk

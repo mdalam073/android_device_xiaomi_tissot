@@ -18,7 +18,7 @@ $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := lineage_tissot
+PRODUCT_NAME := sigma_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
@@ -33,6 +33,17 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
 
-# LineageOS Stuffs
-TARGET_GAPPS_ARCH := arm64
+# Gapps
+WITH_GMS := true
+WITH_GAPPS := true
+BUILD_GMS_OVERLAYS_AND_PROPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+
+# Sigma build flags
+SIGMA_BUILD_TYPE := UNOFFICIAL
+SIGMA_MAINTAINER := Alam
+TARGET_HAS_UDFPS := false
+TARGET_ENABLE_BLUR := false
+TARGET_IS_PIXEL := false
+TARGET_SUPPORTS_CLEAR_CALLING := true

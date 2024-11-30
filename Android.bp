@@ -4,3 +4,12 @@ soong_namespace {
         "hardware/xiaomi",
     ],
 }
+
+cc_library {
+    name: "libfmjni",
+    vendor: true,
+    srcs: [],
+    shared_libs: [],
+    stl: "none", // Add this line to explicitly specify no STL is used.
+}
+
